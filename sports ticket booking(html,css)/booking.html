@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefeff;
+}
+
+/* Header Styling */
+header {
+    background-color: #117be5;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+        main {
+            padding: 20px;
+        }
+
+        .booking-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .booking-form .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .booking-form .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #117be5;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #event-select {
+            margin-bottom: 20px;
+        }
+
+        #ticket-quantity {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Your Tickets</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="booking-form">
+            <h2>Enter Your Details</h2>
+            <form action="pay_con.html" method="get">
+                <label for="event-select">Select Event:</label>
+                <select id="event-select" name="event" required>
+                    <option value="">Select an Event</option>
+                    <option value="cricket_match">Cricket Match - Team A vs Team B</option>
+                    <option value="football_match">Football Match - Team X vs Team Y</option>
+                    <option value="basketball_game">Basketball Game - Team P vs Team Q</option>
+                </select>
+
+                <label for="ticket-quantity">Quantity:</label>
+                <input type="number" id="ticket-quantity" name="quantity" value="1" min="1" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" required>
+            
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry" required>
+            
+                <button type="submit" class="btn">Complete Purchase</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Sports Ticket Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>

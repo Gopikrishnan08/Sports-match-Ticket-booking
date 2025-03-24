@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefeff;
+}
+
+/* Header Styling */
+header {
+    background-color: #117be5;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    padding: 40px 0;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: rgb(23, 22, 22);
+    background-color: #f1f1f1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Sport Card Section */
+
+    footer .footer-content {
+        font-size: 0.9em;
+        text-align:center;
+       
+    }
+
+/*Marquee*/
+#marquee{
+    display: inline-block;
+
+    }
+#match1{
+    display:inline-block;
+    
+}
+#match2{
+    display: inline-block;
+}
+#match3{
+    display:inline-block;
+}
+.match-container {
+    overflow: hidden; /* Hide overflow to create the scrolling effect */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match-scroll {
+    display: flex; /* Use flexbox for horizontal layout */
+    animation: scroll 20s linear infinite; /* Apply animation */
+}
+
+.match {
+    min-width: 600px; /* Ensure each match has enough width */
+    text-align: center;
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.match:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.match img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); } /* Start off-screen right */
+    100% { transform: translateX(-100%); } /* End off-screen left */
+}
+/* sports categories*/
+/* Main content styling */
+main {
+    padding: 40px 10%;
+}
+
+.categories {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(25, 0, 0, 0.1);
+}
+
+.categories h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00ff4c;
+}
+
+.categories ul {
+    list-style-type: none;
+   
+}
+
+.categories ul li {
+    margin: 10px 0;
+}
+
+.categories ul li a {
+    display: block;
+    font-size: 1.5em;
+    color: #dc801e;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #aa00ff;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.categories ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
